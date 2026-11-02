@@ -1,6 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f8c8f0;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Comic Sans MS", "Comic Sans", "Comic Neue", "Chalkboard SE", cursive;
+  font-size: 18px;
+  line-height: 1.5;
   color: #4b0082;
   margin: 0;
   padding: 20px;
@@ -20,11 +28,12 @@ h1 {
   color: #ff1493;
   font-size: 34px;
   text-decoration: underline;
+  line-height: 1.2;
 }
 
 h2 {
   color: #8a2be2;
-  font-family: "Times New Roman", serif;
+  font-family: "Times New Roman", Times, serif;
   border-bottom: 2px dotted #ff69b4;
 }
 
@@ -39,6 +48,7 @@ h2 {
 #nav {
   text-align: center;
   font-size: 18px;
+  line-height: 2;
   margin: 15px 0;
 }
 
@@ -85,14 +95,58 @@ td {
 
 .footer {
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   color: #7a4a8a;
 }
 
 .counter {
   background-color: #4b0082;
   color: #ff69b4;
-  font-family: "Courier New", monospace;
+  font-family: "Courier New", Courier, monospace;
   padding: 2px 6px;
   letter-spacing: 2px;
+}
+
+/* ---------- phones and small screens ---------- */
+@media (max-width: 600px) {
+  body {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  #wrapper {
+    padding: 12px;
+    border-width: 3px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  #nav {
+    font-size: 16px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 4px;
+    word-break: break-word;
+  }
+
+  ul,
+  ol {
+    padding-left: 22px;
+  }
+
+  a {
+    word-break: break-word;
+  }
 }
