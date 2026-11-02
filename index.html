@@ -3,96 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All About Cats</title>
+  <title>Computer Protocols</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div id="wrapper">
 
-    <h1>~*~ Welcome to My Website!! ~*~</h1>
+    <h1>Welcome to My Website!! ~</h1>
     <p class="construction">*** This page is still under construction ***</p>
 
     <div id="nav">
-      <a href="#meet">Meet the Cat</a> |
-      <a href="#facts">Cat Facts</a> |
-      <a href="#day">A Cat's Day</a> |
-      <a href="#links">Cool Links</a>
+      <a href="#what">What is a Protocol?</a> |
+      <a href="#common">Common Protocols</a> |
+      <a href="#tcpudp">TCP vs UDP</a> |
+      <a href="#osi">OSI Model</a> |
+      <a href="#links">Links</a>
     </div>
 
     <hr>
 
-    <h2 id="meet">Meet Mittens</h2>
+    <h2 id="what">What is a Protocol?</h2>
     <p>
-      This is a website about an animal, the <b>cat</b>!!
-      Mittens is a fluffy gray cat with white paws. She is very
-      lazy but also very cute. She likes to sit 
-      and stare until she gets  her food.
+      A <b>protocol</b> is a set of rules that tells computers how to
+      talk to each other. Just like people need to speak the same
+      language to understand each other, computers need to follow the
+      same protocol or they cannot communicate at all!
     </p>
     <p>
-      <i>Name:</i> Mittens<br>
-      <i>Favorite food:</i> tuna<br>
-      <i>Favorite place:</i> the warm spot by the window<br>
-      <i>Favorite hobby:</i> knocking things off the table
+      Protocols decide things like:<br>
+      <i>1.</i> how data is split up and sent<br>
+      <i>2.</i> how the data is addressed so it gets to the right place<br>
+      <i>3.</i> what happens if something gets lost on the way
     </p>
 
     <hr>
 
-    <h2 id="facts">Cool Cat Facts</h2>
-    <ul>
-      <li>Cats sleep about 12 to 16 hours every day</li>
-      <li>A group of kittens is called a litter</li>
-      <li>Cats purr when they are happy (and sometimes when they are hurt)</li>
-      <li>Cats can jump about 5 times their own height</li>
-      <li>Every cat's nose print is different, like a fingerprint</li>
-    </ul>
-
-    <hr>
-
-    <h2 id="day">A Day in the Life of a Cat</h2>
-    <p>Here is Mittens' schedule (she is very busy):</p>
+    <h2 id="common">Common Protocols</h2>
+    <p>Here are some protocols that you use every day without knowing it:</p>
 
     <table>
       <tr>
-        <th>Time</th>
-        <th>Activity</th>
-        <th>Cuteness Level</th>
+        <th>Protocol</th>
+        <th>What it does</th>
+        <th>Port</th>
       </tr>
       <tr>
-        <td>Morning</td>
-        <td>Wake up and demand breakfast</td>
-        <td>8/10</td>
+        <td>HTTP</td>
+        <td>Loads web pages</td>
+        <td>80</td>
       </tr>
       <tr>
-        <td>Noon</td>
-        <td>Nap in the sun</td>
-        <td>10/10</td>
+        <td>HTTPS</td>
+        <td>Loads web pages securely</td>
+        <td>443</td>
       </tr>
       <tr>
-        <td>Afternoon</td>
-        <td>Chase a toy mouse</td>
-        <td>9/10</td>
+        <td>FTP</td>
+        <td>Transfers files</td>
+        <td>21</td>
       </tr>
       <tr>
-        <td>Evening</td>
-        <td>Zoomies around the house</td>
-        <td>10/10</td>
+        <td>SSH</td>
+        <td>Secure remote login</td>
+        <td>22</td>
       </tr>
       <tr>
-        <td>Night</td>
-        <td>Sleep on my bed</td>
-        <td>100/10</td>
+        <td>SMTP</td>
+        <td>Sends email</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>DNS</td>
+        <td>Turns website names into IP addresses</td>
+        <td>53</td>
       </tr>
     </table>
 
     <hr>
 
-    <h2 id="links">Cool Links</h2>
-    <p>Websites about cats:</p>
+    <h2 id="tcpudp">TCP vs UDP</h2>
+    <p>These are the two main ways to send data over a network:</p>
+    <ul>
+      <li><b>TCP</b> is careful and reliable. It checks that everything arrived and resends anything that got lost. Used for web pages and email.</li>
+      <li><b>UDP</b> is fast but does not check anything. Some data might get lost. Used for video calls and online games.</li>
+    </ul>
+    <p><i>Easy way to remember:</i> TCP is like a phone call where you confirm they heard you, UDP is like shouting across the room.</p>
+
+    <hr>
+
+    <h2 id="osi">The OSI Model</h2>
+    <p>The OSI model splits networking into 7 layers. My teacher made us learn them:</p>
     <ol>
-      <li><a href="https://en.wikipedia.org/wiki/Cat">Wikipedia: Cat</a></li>
-      <li><a href="https://www.nationalgeographic.com/animals/mammals/facts/domestic-cat">National Geographic: Domestic Cat</a></li>
-      <li><a href="https://www.youtube.com">YouTube</a> (funny cat videos)</li>
+      <li>Physical (cables and signals)</li>
+      <li>Data Link (MAC addresses)</li>
+      <li>Network (IP addresses)</li>
+      <li>Transport (TCP and UDP)</li>
+      <li>Session</li>
+      <li>Presentation</li>
+      <li>Application (HTTP, DNS, etc.)</li>
+    </ol>
+    <p><i>Tip:</i> Make up a silly sentence to remember the order!</p>
+
+    <hr>
+
+    <h2 id="links">Explore Links</h2>
+    <p>Websites where I learned about protocols:</p>
+    <ol>
+      <li><a href="https://en.wikipedia.org/wiki/Internet_protocol_suite">Wikipedia: Internet Protocol Suite</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">MDN: HTTP</a></li>
+      <li><a href="https://www.cloudflare.com/learning/">Cloudflare Learning Center</a></li>
     </ol>
 
     <hr>
@@ -100,7 +120,7 @@
     <p class="footer">
       You are visitor number <span class="counter">000124</span><br>
       Last updated: November 2026<br>
-      Meow!! =^..^=
+      Best viewed in any browser!! (it uses HTTP to get here)
     </p>
 
   </div>
